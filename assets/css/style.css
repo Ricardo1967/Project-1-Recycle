@@ -4,7 +4,8 @@
 }
 
 body{
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: white;
 }
 
 .top-bar{
@@ -14,29 +15,39 @@ body{
 }
 
 .top-bar-right{
-    margin-top: 160px;
-    
-   background:white;
+    margin-top: 160px;  
+    background:white;
 }
+
 a{
     float:right; 
     text-align: right;
     background:white;
     color: #135c1a;
     font-size: 20px;
-    font-family: "sensei",Arial, Helvetica, sans-serif
+    font-family: "sensei",Arial, Helvetica, sans-serif;
+    margin-left:20px;
 }
 
 a:hover {
     color:#78be20;
 }
 
-/* a:visited {
-    color:#FFD700;
+/* #funFactBlock{
+    background:#135c1a;
+    height: 400px;
+    padding: 50px;
 } */
 
+.thumbnail{
+    height:300px;
+    width: 300px;
+    float: right;
+    border-radius: 8px;
+}
+
 #actionBlock{
-    background: url(../images/greenLeaves.jpg);
+    background: url(../images/brokenGlass.jpg);
     height:400px;
     padding: 50px;
 }
@@ -49,10 +60,19 @@ h1{
     color: white;
 }
 
+h2{
+    text-align: center;
+    padding: 15px;
+    font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
 label{
     color:white;
     font-weight: bold;
     margin-bottom: 60px;
+    float:left;
 }
 
 
@@ -61,8 +81,22 @@ input,
     background: #135c1a;
     font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px 25px 10px 25px;
-    margin:auto;
+    /* margin:auto; */
     color: white;
     font-size: 28px;
+}
+
+
+
+@media screen and (max-width:415px){
+
+    #actionBlock{
+        height:600px;
+    }
+
+    .top-bar-right{
+        margin-top: 60px;  
+    }
+    
 
 }
