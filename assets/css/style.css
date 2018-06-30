@@ -33,19 +33,11 @@ a:hover {
     color:#78be20;
 }
 
-<<<<<<< HEAD
 /* #funFactBlock{
     background:#135c1a;
     height: 400px;
     padding: 50px;
 } */
-=======
-#funFactBlock{
-    background:#135c1a;
-    height: 400px;
-    padding: 50px;
-}
->>>>>>> createJS
 
 .thumbnail{
     height:300px;
@@ -80,10 +72,7 @@ label{
     color:white;
     font-weight: bold;
     margin-bottom: 60px;
-<<<<<<< HEAD
     float:left;
-=======
->>>>>>> createJS
 }
 
 
@@ -92,24 +81,36 @@ input,
     background: #135c1a;
     font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px 25px 10px 25px;
-<<<<<<< HEAD
     /* margin:auto; */
     color: white;
     font-size: 28px;
 }
 
-
-=======
-    margin:auto;
-    color: white;
-    font-size: 28px;
-
-}
+.orbit-container {
+    position: relative;
+    height: 500px;
+  }
 
 .orbit-caption{
-    background: red;
+    position: absolute;
+	top: 0;
+	left: 10%;
+	width: 80%;
+	height: 50%; 
+    color:black;
+    font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    background: white;
+    opacity: 0.7;
+    margin: auto;
+    display: flex;
+    align-items: center;
+ 
+   
 }
->>>>>>> createJS
+
+
 
 @media screen and (max-width:415px){
 
