@@ -1,18 +1,16 @@
-<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Recyle Buddies</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.1/dist/css/foundation.min.css" integrity="sha256-5B4hbMU9OJUxbUEvafv7D53WeubxzKZBqPfQNMh6Iw8= sha384-n7bC26QCtUZ5T9AHXtZrl7FcPQL5BkGi/JXbs6FVnUexlfniI0xH42VZxa4OxPD1 sha512-AnfTqiknRiK8BIwGSIegiguDX0838ShwXn8bEmTGPb31OPyYMzBbtnuekO6qSFzP/J8a0bMe4V6FcfM7n/YONQ=="
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <title>Recycle Buddies</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="assets/javascript/logic.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
 </head>
 
 <body>
@@ -22,50 +20,96 @@
                 <img src="assets/images/Logo.jpg" alt="Recyle Buddies Logo" />
             </div>
             <div class="top-bar-right">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li>
-                        <a href="#">About Us</a>
-                        <a href="#actionBlock">Start Reclying Now</a>
-                        <a href="#">Get In Touch</a>
+                <a href="#">About Us</a>
+                <a href="#actionBlock">Start Reclying Now</a>
+                <a href="#">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container fluid" id="main-section">
+        <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <div class="orbit-wrapper">
+                <div class="orbit-controls">
+                    <button class="orbit-previous">
+                        <span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                    <button class="orbit-next">
+                        <span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                </div>
+                <ul class="orbit-container">
+                    <li class="is-active orbit-slide">
+                        <figure class="orbit-figure">
+                            <img class="orbit-image" src="https://placehold.it/1200x600/999?text=Slide-1" alt="Space">
+                            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                        </figure>
+                    </li>
+                    <li class="orbit-slide">
+                        <figure class="orbit-figure">
+                            <img class="orbit-image" src="https://placehold.it/1200x600/888?text=Slide-2" alt="Space">
+                            <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                        </figure>
+                    </li>
+                    <li class="orbit-slide">
+                        <figure class="orbit-figure">
+                            <img class="orbit-image" src="https://placehold.it/1200x600/777?text=Slide-3" alt="Space">
+                            <figcaption class="orbit-caption">Encapsulating</figcaption>
+                        </figure>
+                    </li>
+                    <li class="orbit-slide">
+                        <figure class="orbit-figure">
+                            <img class="orbit-image" src="https://placehold.it/1200x600/666&text=Slide-4" alt="Space">
+                            <figcaption class="orbit-caption">Outta This World</figcaption>
+                        </figure>
                     </li>
                 </ul>
             </div>
+            <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0">
+                    <span class="show-for-sr">First slide details.</span>
+                    <span class="show-for-sr">Current Slide</span>
+                </button>
+                <button data-slide="1">
+                    <span class="show-for-sr">Second slide details.</span>
+                </button>
+                <button data-slide="2">
+                    <span class="show-for-sr">Third slide details.</span>
+                </button>
+                <button data-slide="3">
+                    <span class="show-for-sr">Fourth slide details.</span>
+                </button>
+            </nav>
         </div>
-    </div>
-    <div class="grid-container fluid" id="main-container">
-        <div class="grid-x">
-            <div class="cell" id="actionBlock">
-                <h1>Be the CHANGE!</h1>
-                <form>
-                    <div class="grid-container">
-                        <div class="grid-x grid-padding-x">
-                            <div class="medium-6 cell">
-                                <label> What do you want to recycle?
-                                    <input type="text" placeholder="ex.: glass">
-                                </label>
-                            </div>
-                            <div class="medium-6 cell">
-                                <label>Enter your postal code.
-                                    <input type="number" placeholder="ex.:33019">
-                                </label>
-                            </div>
-                            <div class="button">
-                                <input type="submit" class="button" value="Submit">
-                            </div>
-                        </div>
-                    </div>
-                </form>
+        <div class="grid-container" id="actionBlock">
+            <div class="row">
+                <div class=" columns large-12">
+                    <h1>Be the CHANGE!</h1>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="columns large-6">
+                    <label> What do you want to recycle?
+                        <input type="text" placeholder="ex.: glass">
+                    </label>
+                </div>
+                <div class="columns large-6">
+                    <label>Enter your postal code.
+                        <input type="number" placeholder="ex.:33019">
+                    </label>
+                
+                </div class="columns large-12">
+                <button type="button" class="button text-center">Submit</button>
+                </div>
 
             </div>
-
-        </div>
-        <div class="cell small-6 right" data-sticky-container>
-            <div class="sticky" data-sticky data-stick-to="bottom" data-top-anchor="example3" data-btm-anchor="foo2:top">
-                <h1>This is sticky</h1>
+            
+               
             </div>
         </div>
     </div>
-
+    <script>
+        $(document).ready(function () {
+            $(document).foundation();
+        })
+    </script>
 </body>
 
 </html>
