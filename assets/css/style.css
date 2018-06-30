@@ -33,11 +33,19 @@ a:hover {
     color:#78be20;
 }
 
+<<<<<<< HEAD
 /* #funFactBlock{
     background:#135c1a;
     height: 400px;
     padding: 50px;
 } */
+=======
+#funFactBlock{
+    background:#135c1a;
+    height: 400px;
+    padding: 50px;
+}
+>>>>>>> createJS
 
 .thumbnail{
     height:300px;
@@ -72,7 +80,10 @@ label{
     color:white;
     font-weight: bold;
     margin-bottom: 60px;
+<<<<<<< HEAD
     float:left;
+=======
+>>>>>>> createJS
 }
 
 
@@ -81,12 +92,24 @@ input,
     background: #135c1a;
     font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px 25px 10px 25px;
+<<<<<<< HEAD
     /* margin:auto; */
     color: white;
     font-size: 28px;
 }
 
 
+=======
+    margin:auto;
+    color: white;
+    font-size: 28px;
+
+}
+
+.orbit-caption{
+    background: red;
+}
+>>>>>>> createJS
 
 @media screen and (max-width:415px){
 
