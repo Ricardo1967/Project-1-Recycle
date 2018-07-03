@@ -1,35 +1,61 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Recyle Buddies</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.0-rc.1/dist/css/foundation.min.css" integrity="sha256-5B4hbMU9OJUxbUEvafv7D53WeubxzKZBqPfQNMh6Iw8= sha384-n7bC26QCtUZ5T9AHXtZrl7FcPQL5BkGi/JXbs6FVnUexlfniI0xH42VZxa4OxPD1 sha512-AnfTqiknRiK8BIwGSIegiguDX0838ShwXn8bEmTGPb31OPyYMzBbtnuekO6qSFzP/J8a0bMe4V6FcfM7n/YONQ==" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <!-- <script src="js/jquery.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    
-    <!-- <script src="js/foundation.min.js"></script> -->
-    <script src="assets/javascript/logic.js"></script>
-    
-    
-     
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
 
 <body>
-    <div class="grid-container full">
-        <div class="grid-x grid-margin-x" id="header">
-            <h1>This is our header</h1>
-            
-        </div>
-    </div>
+  <div class="container">
+    <h1>Movie Search</h1>
 
+    <!-- We'll be dumping our JSON contents in here -->
+    <div id="googeData"></div>
 
-    
-   
+    <!-- This form will be where users input data about the movies -->
+    <form id="movie-form">
+      <label for="movie-input">Search anything</label>
+      <input type="text" id="user-input"><br>
 
+      <!-- This button will trigger our AJAX call -->
+      <input id="submitBtn" type="submit" value="Movie Search">
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      // This .on("click") function will trigger the AJAX Call
+      $("#submitBtn").on("click", function(event) {
+
+        // event.preventDefault() can be used to prevent an event's default behavior.
+        // Here, it prevents the submit button from trying to submit a form when clicked
+        event.preventDefault();
+
+        // Here we grab the text from the input box
+        var searchValue = $("#user-input").val();
+
+        // Here we construct our URL
+        var queryURL = "https://www.googleapis.com/customsearch/v1?key=AIzaSyBoFD4dhfsyEkbmiFi9WP-ZgnsgURasJ04&cx=017576662512468239146:omuauf_lfve&q=" + searchValue;
+
+        // Write code between the dashes below to hit the queryURL with $ajax, then take the response data
+        // and display it in the div with an id of movie-view
+
+        // ------YOUR CODE GOES IN THESE DASHES. DO NOT MANUALLY EDIT THE HTML ABOVE.
+
+        $.ajax({
+          url: queryURL,
+          method: "GET"
+        }).then(function(response) {
+          $("#googeData").text(JSON.stringify(response));
+        });
+
+        // -----------------------------------------------------------------------
+
+      });
+    </script>
+  </div>
 </body>
 
 </html>
