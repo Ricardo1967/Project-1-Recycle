@@ -33,19 +33,11 @@ a:hover {
     color:#78be20;
 }
 
-<<<<<<< HEAD
-/* #funFactBlock{
-    background:#135c1a;
-    height: 400px;
-    padding: 50px;
-} */
-=======
 #funFactBlock{
     background:#135c1a;
     height: 400px;
     padding: 50px;
 }
->>>>>>> createJS
 
 .thumbnail{
     height:300px;
@@ -68,7 +60,8 @@ h1{
     color: white;
 }
 
-h2{
+h2,
+h3{
     text-align: center;
     padding: 15px;
     font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -76,14 +69,15 @@ h2{
     color: white;
 }
 
+h3{
+    font-family: "sensei";
+}
+
 label{
     color:white;
     font-weight: bold;
     margin-bottom: 60px;
-<<<<<<< HEAD
     float:left;
-=======
->>>>>>> createJS
 }
 
 
@@ -91,25 +85,32 @@ input,
 .button{
     background: #135c1a;
     font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px 25px 10px 25px;
-<<<<<<< HEAD
+    padding: 10px lass25px 10px 25px;
     /* margin:auto; */
     color: white;
     font-size: 28px;
 }
 
 
-=======
-    margin:auto;
-    color: white;
-    font-size: 28px;
-
+#footer{
+    background:#135c1a;
+    height: 400px;
+    border-top: 3px #78be20  double;
+    /* margin-top:20px; */
 }
 
-.orbit-caption{
-    background: red;
+#footerLogo{
+    margin: 40px;
+    height: 150px;
+    float: left;
 }
->>>>>>> createJS
+
+.footerLists{
+    margin:20px;
+    float: left;
+}
+
+
 
 @media screen and (max-width:415px){
 
