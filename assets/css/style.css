@@ -101,6 +101,7 @@ input,
 
 #footerLogo{
     margin: 40px;
+    margin-top: 80px;
     height: 150px;
     float: left;
 }
@@ -108,7 +109,23 @@ input,
 .footerLists{
     margin:20px;
     float: left;
+    padding-right: 30px;
+    border-right: 2px white solid;
+
 }
+
+#smIcons{
+    border-radius:20px;
+    height: 40px;
+}
+
+il{
+    color:white;
+    font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
 
 
 
