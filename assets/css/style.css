@@ -142,4 +142,11 @@ h1 {
 
 label {
     color: green;
+    margin: 10px;
 }
+
+form-group {
+    padding: 0%;
+    height: 0%;
+}
+
