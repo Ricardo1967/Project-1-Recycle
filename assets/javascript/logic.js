@@ -8,10 +8,10 @@ var map = 0;
 
 //When the button is clicked, grabs the information from the input boxes
 $("#submitBtn").on("click", function(event){
-event.preventDefault();
-zipCode = $("#zipInput").val().trim();
-materialR = $("#materialInput").val().trim();
-console.log(zipCode, materialR);
-});
+        event.preventDefault();
+        zipCode = $("#zipInput").val().trim();
+        materialR = $("#materialInput").val().trim();
+        console.log(zipCode, materialR);
+    }); //Finishes function that grabs input values (WORKING)
 
 });
