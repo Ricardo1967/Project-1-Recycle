@@ -108,6 +108,10 @@ input,
     align-items: center;
 }
 
+#map{
+    height: 40%;
+}
+
 @media screen and (max-width:415px){
 
     #actionBlock{
