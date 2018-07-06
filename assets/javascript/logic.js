@@ -12,6 +12,31 @@ $("#submitBtn").on("click", function(event){
         zipCode = $("#zipInput").val().trim();
         materialR = $("#materialInput").val().trim();
         console.log(zipCode, materialR);
+
+        var queryURL = "https://www.googleapis.com/customsearch/v1?key=AIzaSyBoFD4dhfsyEkbmiFi9WP-ZgnsgURasJ04&cx=017576662512468239146:omuauf_lfve&q=how+to+recycle+" + materialR;
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+          }).then(function(response) {
+              console.log(response);
+              
+              
+              for(var i=0; i<response.items.length; i++){
+
+                $(".card").append("<div class='card-divider' id='title-" +i + "'><h4>" + response.items[i].htmlTitle +"</h4>"); 
+
+                $(".card").append("<div class='card-section' id='link" + i + "'>" +response.items[i].link );
+
+                $(".card").append("<div class='card-section' id='descript" + i + "'>" +response.items[i].snippet );
+            
+               
+            }
+            
+          });
     }); //Finishes function that grabs input values (WORKING)
 
 });
+
+
+
