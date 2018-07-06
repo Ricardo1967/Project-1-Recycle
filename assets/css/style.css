@@ -167,3 +167,53 @@ form-group {
     padding: 0%;
     height: 0%;
 }
+
+/* // About Us Section */
+
+.about-me {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #e1f3e3
+
+}
+
+.about-me:after{
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.about-me h2 {
+    color: #45a049;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.about-me .col-left, .about-me .col-right {
+    width: 50%;
+    float: left;
+}
+
+.about-me .col-left img {
+    max-width: 100%;
+}
+
+.about-me .col-left {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.about-me h2:after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    margin-left: -40px;
+    left: 50%;
+    bottom: 0px;
+    background-color: #45a049;
+
+}
