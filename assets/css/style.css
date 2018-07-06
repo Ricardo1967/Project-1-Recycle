@@ -33,19 +33,11 @@ a:hover {
     color:#78be20;
 }
 
-<<<<<<< HEAD
 /* #funFactBlock{
     background:#135c1a;
     height: 400px;
     padding: 50px;
 } */
-=======
-#funFactBlock{
-    background:#135c1a;
-    height: 400px;
-    padding: 50px;
-}
->>>>>>> footer
 
 .thumbnail{
     height:300px;
@@ -99,17 +91,12 @@ input,
 .button{
     background: #135c1a;
     font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-<<<<<<< HEAD
     padding: 10px 25px 10px 25px;
-=======
-    padding: 10px lass25px 10px 25px;
->>>>>>> footer
     /* margin:auto; */
     color: white;
     font-size: 28px;
 }
 
-<<<<<<< HEAD
 .orbit-container {
     position: relative;
     height: 500px;
@@ -131,7 +118,6 @@ input,
     display: flex;
     align-items: center;
 }
-=======
 
 #footer{
     background:#135c1a;
@@ -179,7 +165,6 @@ iframe{
 
 
 
->>>>>>> footer
 
 @media screen and (max-width:415px){
 
