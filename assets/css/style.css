@@ -73,6 +73,12 @@ h3{
     font-family: "sensei";
 }
 
+.smallH3{
+    font-size: 15px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
 label{
     color:white;
     font-weight: bold;
@@ -94,24 +100,19 @@ input,
 
 #footer{
     background:#135c1a;
-    height: 400px;
+    height: 100%;
     border-top: 3px #78be20  double;
-    /* margin-top:20px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #footerLogo{
-    margin: 40px;
-    margin-top: 80px;
+    /* margin: 40px;
+    margin-top: 80px; */
     height: 150px;
-    float: left;
-}
-
-.footerLists{
-    margin:20px;
-    float: left;
-    padding-right: 30px;
-    border-right: 2px white solid;
-
+    /* float: left; */
 }
 
 #smIcons{
@@ -119,12 +120,27 @@ input,
     height: 40px;
 }
 
-il{
+il,
+p{
     color:white;
+    margin:40px;
     font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 
+p{
+    margin:15px;
+}
+
+#footerContainers{
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-right: 30px;
+    float: left;
+}
+
+iframe{
+    height: 160px;
+} 
 
 
 
