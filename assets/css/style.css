@@ -33,11 +33,19 @@ a:hover {
     color:#78be20;
 }
 
+<<<<<<< HEAD
 /* #funFactBlock{
     background:#135c1a;
     height: 400px;
     padding: 50px;
 } */
+=======
+#funFactBlock{
+    background:#135c1a;
+    height: 400px;
+    padding: 50px;
+}
+>>>>>>> footer
 
 .thumbnail{
     height:300px;
@@ -60,12 +68,23 @@ h1{
     color: white;
 }
 
-h2{
+h2,
+h3{
     text-align: center;
     padding: 15px;
     font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 28px;
     color: white;
+}
+
+h3{
+    font-family: "sensei";
+}
+
+.smallH3{
+    font-size: 15px;
+    text-align: left;
+    padding-bottom: 10px;
 }
 
 label{
@@ -80,12 +99,17 @@ input,
 .button{
     background: #135c1a;
     font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+<<<<<<< HEAD
     padding: 10px 25px 10px 25px;
+=======
+    padding: 10px lass25px 10px 25px;
+>>>>>>> footer
     /* margin:auto; */
     color: white;
     font-size: 28px;
 }
 
+<<<<<<< HEAD
 .orbit-container {
     position: relative;
     height: 500px;
@@ -107,6 +131,55 @@ input,
     display: flex;
     align-items: center;
 }
+=======
+
+#footer{
+    background:#135c1a;
+    height: 100%;
+    border-top: 3px #78be20  double;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footerLogo{
+    /* margin: 40px;
+    margin-top: 80px; */
+    height: 150px;
+    /* float: left; */
+}
+
+#smIcons{
+    border-radius:20px;
+    height: 40px;
+}
+
+il,
+p{
+    color:white;
+    margin:40px;
+    font-family: 'montserrat','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    margin:15px;
+}
+
+#footerContainers{
+    margin-top:20px;
+    margin-bottom:20px;
+    padding-right: 30px;
+    float: left;
+}
+
+iframe{
+    height: 160px;
+} 
+
+
+
+>>>>>>> footer
 
 @media screen and (max-width:415px){
 

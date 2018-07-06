@@ -1,4 +1,4 @@
-<html>
+<!doctype html>
 
 <head>
     <meta charset="utf-8" />
@@ -14,19 +14,27 @@
 </head>
 
 <body>
-    <div class="grid-container fluid" id="header">
-        <div class="top-bar">
-            <div class="top-bar-left">
-                <img src="assets/images/Logo.jpg" alt="Recyle Buddies Logo" />
-            </div>
-            <div class="top-bar-right">
-                <a href="#">About Us</a>
-                <a href="#actionBlock">Start Reclying Now</a>
-                <a href="#">Get In Touch</a>
+
+<!-- HEADER -->
+    <div class="grid-y medium-grid-frame">
+        <div class="cell shrink header medium-cell-block-container">
+            <div class="top-bar">
+                <div class="top-bar-left">
+                    <img src="assets/images/Logo.jpg" alt="Recyle Buddies Logo" />
+                </div>
+                <div class="top-bar-right">
+                    <a href="#">About Us</a>
+                    <a href="#actionBlock">Start Reclying Now</a>
+                    <a href="#">Get In Touch</a>
+                </div>
             </div>
         </div>
     </div>
+
+<!-- MAIN SECTION -->
     <div class="grid-container fluid" id="main-section">
+
+    <!-- Carousel -->
         <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
             <div class="orbit-wrapper">
                 
@@ -81,39 +89,84 @@
                 </button>
             </nav>
         </div>
+<<<<<<< HEAD
         
         <div class="grid-container" id="actionBlock">
+=======
+
+    <!-- User Input -->
+        <div class="grid-container fluid" id="actionBlock">
+>>>>>>> footer
             <div class="row">
-                <div class=" columns large-12">
+                <div class=" cell large-12">
                     <h1>Be the CHANGE!</h1>
                 </div>
             </div>
-            <div class="grid-x">
-                <div class="columns large-6">
-                    <label> What do you want to recycle?
-                        <input type="text" placeholder="ex.: glass">
-                    </label>
+            <div class="grid-x fluid">
+                <div class="row">
+                    <div class="cell small-2 large-6">
+                        <label> What do you want to recycle?
+                            <input type="text" placeholder="ex.: glass">
+                        </label>
+                    </div>
+                    <div class="cell large-6">
+                        <label>Enter your postal code.
+                            <input type="number" placeholder="ex.:33019">
+                        </label>
+                    </div>
+                    <div class="row">
+                    </div class="cell large-12">
+                    <button type="button" class="button text-center">Submit</button>
                 </div>
-                <div class="columns large-6">
-                    <label>Enter your postal code.
-                        <input type="number" placeholder="ex.:33019">
-                    </label>
-                
-                </div class="columns large-12">
-                <button type="button" class="button text-center">Submit</button>
-                </div>
-
-            </div>
-            
-               
             </div>
         </div>
-    </div>
-    <script>
-        $(document).ready(function () {
-            $(document).foundation();
-        })
-    </script>
+
+ <!-- FOOTER     -->
+        <div class="cell large-12" data-sticky-container id="footer">
+            <div class="row">
+                <div class="cell medium-4" id="footerContainers">
+                    <img class="thumbnail" src="assets/images/smallLogo.jpg" id="footerLogo" alt="Recyle Buddies Logo" />
+                </div>
+                <div class="cell medium-4" id="footerContainers">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <il>
+                            <img src="assets/images/fbIcon.png" alt="Recycle Buddies Facebook" id="smIcons" /> Facebook
+                        </il>
+                        <br>
+                        <br>
+                        <il>
+                            <img src="assets/images/igIcon.png" alt="Recycle Buddies Facebook" id="smIcons" /> Instagram
+                        </il>
+                        <br>
+                        <br>
+                        <il>
+                            <img src="assets/images/ggleIcon.png" alt="Recycle Buddies Facebook" id="smIcons" /> Google+
+                        </il>
+                        <br>
+                        <br>
+                        <il>
+                            <img src="assets/images/pintIcon.png" alt="Recycle Buddies Facebook" id="smIcons" /> Pinterest
+                        </il>
+                    </ul>
+                </div>
+                <div class="cell medium-4" id="footerContainers">
+                    <h3>Where to find us</h3>
+                    <p>5050 Brunson Drive, Coral Gables, FL 33005</p>
+                    <p>Tel.: 954-999-1234 | Fax: 954-999-5678</p>
+                    <P> Email: hello@recyclebuddies.org</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.4385598652293!2d-80.27847754936285!3d25.72300671639865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7f8a2465a1d%3A0x50f87647c155da37!2s5050+Brunson+Dr%2C+Coral+Gables%2C+FL+33146!5e0!3m2!1sen!2sus!4v1530668368786"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $(document).foundation();
+            })
+        </script>
 </body>
 
 </html>
