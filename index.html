@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
 
 <head>
     <meta charset="utf-8" />
@@ -91,20 +92,26 @@
             <div class="grid-x">
                 <div class="columns large-6">
                     <label> What do you want to recycle?
-                        <input type="text" placeholder="ex.: glass">
+                        <input id="materialInput" type="text" placeholder="ex.: glass">
                     </label>
                 </div>
                 <div class="columns large-6">
                     <label>Enter your postal code.
-                        <input type="number" placeholder="ex.:33019">
+                        <input id="zipInput" type="number" placeholder="ex.:33019">
                     </label>
                 
                 </div class="columns large-12">
-                <button type="button" class="button text-center">Submit</button>
+                <button id="submitBtn" type="button" class="button text-center">Submit</button>
                 </div>
 
             </div>
             
+
+
+
+            <div class="card" style="width: 300px;">
+                
+            </div>
                
             </div>
         </div>
@@ -114,6 +121,7 @@
             $(document).foundation();
         })
     </script>
+    <script src="./assets/javascript/logic.js"></script>
 </body>
 
 </html>
