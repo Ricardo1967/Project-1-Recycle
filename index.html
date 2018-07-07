@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -114,10 +115,11 @@
                         <button id="submitBtn" type="button" class="button text-center">Submit</button>
                     </div>
                 </div>
-                <div class="card" style="width: 300px;">
-
-                </div>
             </div>
+
+        </div>
+        <div id="map">
+            
         </div>
         <div id="addCardsHere">
                 
@@ -174,6 +176,7 @@
             $(document).foundation();
         })
     </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCewNtEX9C_9wLxAOvKyTmjT8pV0NJYC_o&libraries=places"></script>
     <script src="./assets/javascript/logic.js"></script>
 </body>
 
