@@ -24,13 +24,15 @@ $("#submitBtn").on("click", function(event){
               
               for(var i=0; i<response.items.length; i++){
 
-                $(".card").append("<div class='card-divider' id='title-" +i + "'><h4>" + response.items[i].htmlTitle +"</h4>"); 
+                $(".addCardsHere").append("<div class='card cardsNum-" + i + "' style='width:300px;'> " );
+
+                $(".cardsNum-" + i + "'").append("<div class='card-divider' id='title-" +i + "'><h4>" + response.items[i].htmlTitle +"</h4>"); 
 
 
-                $(".card").append("<a href='"+ response.items[i].link + "' id='link"+ i + " '>Read Article</a>");
+                $(".cardsNum-" + i + "'").append("<a href='"+ response.items[i].link + "' id='link"+ i + " '>Read Article</a>");
                 //$(".card").append("<div class='card-section' id='link" + i + "'>" +response.items[i].link );
 
-                $(".card").append("<div class='card-section' id='descript" + i + "'>" +response.items[i].snippet );
+                $(".cardsNum-" + i + "'").append("<div class='card-section' id='descript" + i + "'>" +response.items[i].snippet );
             
                
             }
@@ -39,3 +41,4 @@ $("#submitBtn").on("click", function(event){
     }); //Finishes function that grabs input values (WORKING)
 
 });
+
